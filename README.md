@@ -1,4 +1,4 @@
-💳 Idempotent Key Service
+# 💳 Idempotent Key Service
 
   A simple payment processing system that guarantees safe retries using Idempotency Keys.
   
@@ -6,7 +6,7 @@
   
   The system ensures that the same payment request is processed only once, even if the client sends the request multiple times.
 
-🚀 Project Overview
+# 🚀 Project Overview
 
   In real-world payment systems, network failures are common. When a client does not receive a response, it may retry the same API call. If the backend processes that request again, it can result in duplicate charges, which is unacceptable in financial systems.
   
@@ -24,11 +24,11 @@
   
   This guarantees exactly-once processing behaviour for payment requests.
 
-🏗️ System Architecture
+# 🏗️ System Architecture
 
 <img width="627" height="525" alt="image" src="https://github.com/user-attachments/assets/39f5b0f2-902a-43fc-98f5-043fd8dbe023" />
 
-🧰 Tech Stack
+# 🧰 Tech Stack
 
   Backend
   
@@ -47,7 +47,7 @@
   
     MySQL
 
-🔑 How Idempotency Works
+# 🔑 How Idempotency Works
 
   1️⃣ The client generates a unique Idempotency Key
   
@@ -77,7 +77,7 @@
     
     This ensures that retries never create duplicate payments.
 
-🔐 Request Hash Validation
+# 🔐 Request Hash Validation
 
   To prevent misuse of idempotency keys, the system also validates request payload integrity.
   
@@ -91,7 +91,7 @@
     
     This prevents scenarios where a client accidentally or intentionally tries to reuse a key for a different payment.
 
-🖥️ Frontend Features
+# 🖥️ Frontend Features
 
 The React frontend provides a simple UI to simulate payment requests.
 
@@ -139,7 +139,7 @@ Retrying the request with the same **Idempotency Key** and identical payload ret
   Displays error message if payment fails
 
 
-▶️ Running the Project Locally
+# ▶️ Running the Project Locally
 
   1️⃣ Clone the repository
   
@@ -163,7 +163,7 @@ Retrying the request with the same **Idempotency Key** and identical payload ret
   
     http://localhost:5173
 
-⚡ Why This Project Matters
+# ⚡ Why This Project Matters
   
   Idempotency is a critical concept in distributed systems, especially in systems that handle financial or transactional operations.
   
@@ -173,7 +173,7 @@ Retrying the request with the same **Idempotency Key** and identical payload ret
   
   This approach is commonly used in payment gateways and financial APIs to ensure consistent and reliable transaction processing.
 
-🔮 Future Improvements
+# 🔮 Future Improvements
 
 Some enhancements that could make the system closer to production-grade:
 
