@@ -1,6 +1,6 @@
 # 💳 Idempotent Key Service
 
-  A simple payment processing system that guarantees safe retries using Idempotency Keys.
+  **A backend project demonstrating how payment APIs implement idempotency to guarantee safe retries and prevent duplicate transactions.**
   
   This project demonstrates how modern payment APIs prevent duplicate transactions when clients retry requests due to network failures or timeouts.
   
@@ -26,7 +26,8 @@
 
 # 🏗️ System Architecture
 
-<img width="627" height="525" alt="image" src="https://github.com/user-attachments/assets/39f5b0f2-902a-43fc-98f5-043fd8dbe023" />
+<img width="1024" height="1536" alt="image" src="https://github.com/user-attachments/assets/402edee3-9ba4-4ca3-8474-fe44d6e2bceb" />
+
 
 # 🧰 Tech Stack
 
